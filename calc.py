@@ -14,13 +14,17 @@ def divide(a, b):
         return "Don't divide by zero!"
     return a / b
 
+def power(a, b):
+    return a ** b
+
 print("Select operation:")
 print("1. Add")
 print("2. Subtract")
 print("3. Multiply")
 print("4. Divide")
+print("5. Power")
 
-choice = input("Enter choice (1/2/3/4): ")
+choice = input("Enter choice (1/2/3/4/5): ")
 
 num1 = float(input("Enter first number: "))
 num2 = float(input("Enter second number: "))
@@ -33,5 +37,7 @@ elif choice == '3':
     print(f"{num1} * {num2} = {multiply(num1, num2)}")
 elif choice == '4':
     print(f"{num1} / {num2} = {divide(num1, num2)}")
+elif choice == '5':
+    print(f"{num1} ^ {num2} = {power(num1, num2)}")
 else:
     print("Invalid input")
